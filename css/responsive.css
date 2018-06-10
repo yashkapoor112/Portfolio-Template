@@ -1,0 +1,100 @@
+@media screen and (min-width: 480){
+
+		/*****************************
+		Two Column LAYOUT (Contact page)
+		******************************/
+		#primary  {
+			width: 50%;
+			float: left;
+		}
+
+
+		#secondary{
+			width: 40%;
+			float: right;
+			padding-right: 5px;
+		}
+	
+	
+		/*****************************
+		3 * 5 = 15 (margins)
+		100 - 15= 85
+		85 / 3 = 28.33 
+		******************************/
+
+		
+	}
+
+@media screen and (min-width: 660px){
+		
+
+		#gallery li{
+			width: 28.3333%;
+		}
+		 #gallery li:nth-child(4n){
+			clear: left; /*---- clears everything to the left of the 4th element */
+		}
+
+
+		/*****************************
+		Three Column LAYOUT (PORTFOLIO page)
+		******************************/
+		
+		.profile-photo{
+			float: left;
+			margin: 0 5% 80px 0;
+		}
+
+		
+
+		/*****************************
+		HEADER		
+		******************************/
+		nav{
+			background: none;
+			text-align: right;
+			float: right;
+			margin: 0 5% 0 0;
+			font-size: 1.125em;
+			width: 45%;
+		}
+#logo{
+	float: left;
+	margin-left: 5%;
+	text-align: left;
+	width: 45%;
+}
+h1{
+	font-size: 2.5em;
+}
+h2{
+	font-size: .825em;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+header{
+	border-bottom: 5px solid #599a68;
+	margin-bottom: 60px;
+}
+
+
+	#primary  {
+			width: 50%;
+			float: left;
+		}
+
+
+		#secondary{
+			width: 40%;
+			float: right;
+			padding-right: 5px;
+		}
+	}
+
+/*NOTE--- The media querries are arranged in a specific order 
+          This shows the cascading nature of css
+          Lower screen sizes should appear first becasuse we have used min width property.
+          In the lowest screen size the properties of main.css 
+          then in the sizes above 480px the properties of media querry will override.
+*/
